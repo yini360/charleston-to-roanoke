@@ -231,7 +231,8 @@ footer p { margin: 0; max-width: 760px; }
 .alert-cat { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
 .alert.closure, .alert.danger { border-color: var(--warn-line); background: var(--warn-bg); }
 .alert.closure .alert-cat, .alert.danger .alert-cat { color: var(--accent-ink); }
-.wx-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; }
+.wx-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+@media (max-width: 420px) { .wx-grid { grid-template-columns: 1fr; } }
 .wx { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
 .wx-head { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
 .wx-head strong { font-family: var(--display); font-size: 18px; }
