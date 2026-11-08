@@ -56,6 +56,26 @@
       </div>
     </div>
 
+    <section class="conditions" aria-labelledby="cond-h">
+      <div class="cond-top">
+        <div>
+          <h3 id="cond-h">Conditions today</h3>
+          <p class="cond-meta">Live park alerts and forecasts along the route.</p>
+        </div>
+        <button class="ghost" id="cond-refresh" type="button">Refresh</button>
+      </div>
+      <div class="cond-grid">
+        <div class="cond-col">
+          <h4>Parkway alerts</h4>
+          <div id="cond-alerts"><p class="cond-meta">Loading alerts…</p></div>
+        </div>
+        <div class="cond-col">
+          <h4>Mountain forecast</h4>
+          <div class="wx-grid" id="cond-weather"></div>
+        </div>
+      </div>
+    </section>
+
     <div class="map-grid">
       <div class="map-box">
         <svg id="map" viewBox="0 0 577 780" role="img" aria-label="Map of the route from Charleston, South Carolina, through Asheville and along the Blue Ridge Parkway to Roanoke, Virginia"></svg>
@@ -166,6 +186,7 @@
 
 <script src="data.js"></script>
 <script src="app.js"></script>
+<script src="conditions.js"></script>
 
 </body>
 </html>
